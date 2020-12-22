@@ -19,7 +19,7 @@ During the training stage, those 3 steps are done 3 times for 3 different songs 
 The STM uses a neural network in order to train to identify the 3 different songs. There are 3 inputs for the neural network: the initial arm angle of the violin player right before the song starts, the intermediate arm angle of the violin player 10 seconds into the song, and the length of the song in seconds. There are 9 intermediate neurons (the hidden layer), which are then linked to 3 output neurons, corresponding to the 3 different songs.
 
 # Main.c
-This is the main program that the STM will run. It contains the following useful functions:
+This is the main program that the STM will run. Below are some of its most important functions:
 
 motion_softmax:
 
