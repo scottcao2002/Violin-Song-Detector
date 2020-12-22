@@ -27,7 +27,7 @@ This function is used to normalize the 3 input neurons so one input cannot domin
 
 getAngularVelocity:
 
-This function obtains the angular velocity of the SensorTile in the x, y, and z axes, which is useful in order to obtain the angle of the SensorTile at some given time. This is done by taking advantage of the calculus trapezoid rule. If the angular velocity at some time step is added to the angular velocity at the time step before, divided by 2, and multiplied by the time for the sample period, the change in the angle of the SensorTile is obtained. If that change is added to the angle at the time step before, this obtains the angle at the new time step.
+This function obtains the angular velocity of the SensorTile in the x, y, and z axes, which is useful in order to obtain the angle of the SensorTile at some given time. This is done by taking advantage of the calculus trapezoid rule. If the angular velocity at some time step is added to the angular velocity at the time step before, divided by 2, and multiplied by the time for the sample period, the change in the angle of the SensorTile is obtained. If that change is added to the angle at the time step before, this obtains the angle at the new time step. Note that this step for getting the actual angle is in the Feature_Extraction_Gyro function. Also, in that function, the angular velocities for the y and z axes are set to 0 because only the x axis angle is needed.
 
 Feature_Extraction_Gyro:
 
